@@ -11,7 +11,7 @@ function App() {
   const [Ctext, setCtext] = useState("Copy");
 
   const passwordG = useCallback(() => {
-    let str = "abcdefghijklmnopqrstuvwxyz";
+    let str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let pass = "";
     if (Num) str += "1234567890";
     if (Spc) str += "!@#$%^&*()";
@@ -71,7 +71,7 @@ function App() {
             // passwordG();
           }}
         />{" "}
-        Numerical
+        Numbers
         <input
           className="ml-4"
           type="checkbox"
@@ -82,7 +82,7 @@ function App() {
             // passwordG();
           }}
         />{" "}
-        Special Character
+        Symbols
       </div>
       <button
         onClick={passwordG}
